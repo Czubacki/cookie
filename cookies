@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<button onclick="akceptacja()">Akceptuj</button>
+<body>
+    <script>
+     document.cookie = "cookieAccept: true";
+     document.write("Klikając ten przycisk, akceptujesz pliki cookies");
+     function akceptacja() {
+         alert ('zaakceptowano')
+        document.write("")
+    }
+    localStorage.setItem('cookieAccept: true')
+    const cat = localStorage.getItem('cookieAccept: true');
+
+    </script>
+
+
+
+
+</body>
+</html>
